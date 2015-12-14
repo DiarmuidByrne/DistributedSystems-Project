@@ -7,6 +7,11 @@ It works through the Tomcat server, which, when ran brings the user to a
 web page that allows them to input the cyphertext, the max key length, and an IP.
 It the user leaves the IP address blank, the RMI will be ran on the local machine.
 
+To run the application:
+- From the command line, while you're in the same folder as the jar, run java -cp vigenere.jar ie.gmit.sw.VigenereServant
+- Make sure the cracker.war file is in tomcat's webapps folder.
+- Run Tomcat and navigate to localhost:8080/cracker 
+
 This project is split into two sections:
  - The RMI-powered Vigenere Cypher Breaker (Vigenere.jar)
  - The Server that sends RMI requests (cracker.war)
