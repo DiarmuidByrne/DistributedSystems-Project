@@ -1,15 +1,16 @@
 # DistributedSystems-Project
 ## 4th Year Distributed Systems RMI project
-Diarmuid Byrne (G00302711)
+Diarmuid Byrne
 
 This project is a Vigenere Cypher cracker using Remote Method Invocation (RMI).
 It works through the Tomcat server, which, when ran brings the user to a
-web page that allows them to input the cyphertext, the max key length, and an IP.
+web page that allows them to input the cyphertext to be decrypted, the max key length, and an IP for the servant to run on.
 It the user leaves the IP address blank, the RMI will be ran on the local machine.
 
 To run the application:
 - From the command line, while you're in the same folder as the jar, run java -cp vigenere.jar ie.gmit.sw.VigenereServant
 - Make sure the cracker.war file is in tomcat's webapps folder.
+- Ensure the included vigenere.jar file is added to Apache's lib folder
 - Run Tomcat and navigate to localhost:8080/cracker 
 
 This project is split into two sections:
